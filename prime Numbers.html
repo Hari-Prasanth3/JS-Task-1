@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <h1>Java Script Task 1</h1>
+        <h2>Prime Number</h2>
+    <p id="demo"></p>
+    <script>
+        let isPrime = (int) => {
+            if (int < 2)
+                return 0
+            else {
+                for (i = 2; i < int; i++) {
+                    if (int % i === 0) {
+                        return 0
+                    }
+                }
+                return 1
+            }
+        }
+        let count = 0
+        while (count <= 100) {
+            if (isPrime(count)) {
+                console.log("The prime Number is " + count);
+            }
+            count++
+        }
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
