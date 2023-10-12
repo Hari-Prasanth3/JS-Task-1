@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JavaScript Task 1</h1>
+    <h2>SecondMax </h2>
+    <script>
+        let SecondMax = (number) => {
+            if (number.length !== 3) {
+                return 0
+            }
+            else {
+                let uniqueNum = number.sort((a, b) => b - a)
+                let result = uniqueNum[1]
+                console.log("The SecondMax Number is " + result);
+            }
+
+        }
+
+        SecondMax([245, 185, 20])
+    </script>
+</body>
+
+</html>
